@@ -1,0 +1,8 @@
+[
+  {"input": {"words": ["leet", "code"], "x": "e"}, "expected": [0, 1]},
+  {"input": {"words": ["abc", "bcd", "aaaa", "cbc"], "x": "a"}, "expected": [0, 2]},
+  {"input": {"words": ["abc", "bcd", "aaaa", "cbc"], "x": "z"}, "expected": []},
+  {"input": {"words": ["x"], "x": "x"}, "expected": [0]},
+  {"input": {"words": ["hello", "world", "hold"], "x": "l"}, "expected": [0, 1, 2]},
+  {"input": {"words": ["cat", "dog", "bird"], "x": "d"}, "expected": [1, 2]}
+]

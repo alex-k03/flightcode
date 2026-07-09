@@ -1,0 +1,8 @@
+[
+  {"input": {"nums": [-4, -1, 0, 3, 10]}, "expected": [0, 1, 9, 16, 100]},
+  {"input": {"nums": [-7, -3, 2, 3, 11]}, "expected": [4, 9, 9, 49, 121]},
+  {"input": {"nums": [0]}, "expected": [0]},
+  {"input": {"nums": [-5, -4, -1]}, "expected": [1, 16, 25]},
+  {"input": {"nums": [1, 2, 3]}, "expected": [1, 4, 9]},
+  {"input": {"nums": [-2, -1, 1, 2]}, "expected": [1, 1, 4, 4]}
+]

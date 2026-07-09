@@ -1,0 +1,8 @@
+[
+  {"input": {"sentence": "thequickbrownfoxjumpsoverthelazydog"}, "expected": true},
+  {"input": {"sentence": "leetcode"}, "expected": false},
+  {"input": {"sentence": "abcdefghijklmnopqrstuvwxyz"}, "expected": true},
+  {"input": {"sentence": "abcdefghijklmnopqrstuvwxy"}, "expected": false},
+  {"input": {"sentence": "zzzzzzzzzzzzzzzzzzzzzzzzzz"}, "expected": false},
+  {"input": {"sentence": "packmyboxwithfivedozenliquorjugs"}, "expected": true}
+]

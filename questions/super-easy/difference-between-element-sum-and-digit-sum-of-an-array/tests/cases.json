@@ -1,0 +1,8 @@
+[
+  {"input": {"nums": [1, 15, 6, 3]}, "expected": 9},
+  {"input": {"nums": [1, 2, 3, 4]}, "expected": 0},
+  {"input": {"nums": [10]}, "expected": 9},
+  {"input": {"nums": [99, 88]}, "expected": 153},
+  {"input": {"nums": [1000, 2000]}, "expected": 2997},
+  {"input": {"nums": [12, 34, 56]}, "expected": 81}
+]

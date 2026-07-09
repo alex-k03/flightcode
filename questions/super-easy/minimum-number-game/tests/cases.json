@@ -1,0 +1,8 @@
+[
+  {"input": {"nums": [5, 4, 2, 3]}, "expected": [3, 2, 5, 4]},
+  {"input": {"nums": [2, 5]}, "expected": [5, 2]},
+  {"input": {"nums": [1, 1]}, "expected": [1, 1]},
+  {"input": {"nums": [9, 1, 4, 2, 8, 3]}, "expected": [2, 1, 4, 3, 9, 8]},
+  {"input": {"nums": [6, 6, 5, 5]}, "expected": [5, 5, 6, 6]},
+  {"input": {"nums": [100, 1, 50, 2, 49, 3]}, "expected": [2, 1, 49, 3, 100, 50]}
+]

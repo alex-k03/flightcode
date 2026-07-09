@@ -1,0 +1,8 @@
+[
+  {"input": {"hours": [0, 1, 2, 3, 4], "target": 2}, "expected": 3},
+  {"input": {"hours": [5, 1, 4, 2, 2], "target": 6}, "expected": 0},
+  {"input": {"hours": [10], "target": 10}, "expected": 1},
+  {"input": {"hours": [1, 1, 1], "target": 0}, "expected": 3},
+  {"input": {"hours": [3, 3, 2, 1], "target": 3}, "expected": 2},
+  {"input": {"hours": [8, 6, 7, 5, 3, 0, 9], "target": 6}, "expected": 4}
+]

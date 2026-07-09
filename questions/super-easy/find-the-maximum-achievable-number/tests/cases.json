@@ -1,0 +1,8 @@
+[
+  {"input": {"num": 4, "t": 1}, "expected": 6},
+  {"input": {"num": 3, "t": 2}, "expected": 7},
+  {"input": {"num": 1, "t": 1}, "expected": 3},
+  {"input": {"num": 10, "t": 5}, "expected": 20},
+  {"input": {"num": 50, "t": 50}, "expected": 150},
+  {"input": {"num": 8, "t": 3}, "expected": 14}
+]

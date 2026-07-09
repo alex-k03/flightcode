@@ -1,0 +1,8 @@
+[
+  {"input": {"nums": [3, 3, 3]}, "expected": "equilateral"},
+  {"input": {"nums": [3, 4, 5]}, "expected": "scalene"},
+  {"input": {"nums": [5, 3, 3]}, "expected": "isosceles"},
+  {"input": {"nums": [1, 2, 3]}, "expected": "none"},
+  {"input": {"nums": [8, 8, 15]}, "expected": "isosceles"},
+  {"input": {"nums": [2, 2, 4]}, "expected": "none"}
+]

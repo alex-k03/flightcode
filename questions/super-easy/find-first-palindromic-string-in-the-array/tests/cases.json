@@ -1,0 +1,8 @@
+[
+  {"input": {"words": ["abc", "car", "ada", "racecar", "cool"]}, "expected": "ada"},
+  {"input": {"words": ["notapalindrome", "racecar"]}, "expected": "racecar"},
+  {"input": {"words": ["def", "ghi"]}, "expected": ""},
+  {"input": {"words": ["a", "bb", "ccc"]}, "expected": "a"},
+  {"input": {"words": ["ab", "ba", "aa"]}, "expected": "aa"},
+  {"input": {"words": ["level", "noon"]}, "expected": "level"}
+]

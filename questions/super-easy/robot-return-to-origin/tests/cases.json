@@ -1,0 +1,8 @@
+[
+  {"input": {"moves": "UD"}, "expected": true},
+  {"input": {"moves": "LL"}, "expected": false},
+  {"input": {"moves": "UDLR"}, "expected": true},
+  {"input": {"moves": "UUDDLRLR"}, "expected": true},
+  {"input": {"moves": "RRDD"}, "expected": false},
+  {"input": {"moves": "LDRRLRUULR"}, "expected": false}
+]

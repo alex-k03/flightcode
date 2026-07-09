@@ -1,0 +1,9 @@
+[
+  {"input": {"s": "leetcode"}, "expected": 0},
+  {"input": {"s": "loveleetcode"}, "expected": 2},
+  {"input": {"s": "aabb"}, "expected": -1},
+  {"input": {"s": "z"}, "expected": 0},
+  {"input": {"s": "aabbc"}, "expected": 4},
+  {"input": {"s": "dddccdbba"}, "expected": 8},
+  {"input": {"s": "xxyyzz"}, "expected": -1}
+]

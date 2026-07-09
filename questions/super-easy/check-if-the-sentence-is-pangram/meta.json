@@ -1,0 +1,5 @@
+{
+  "difficulty": "easy",
+  "time_limit_seconds": 3,
+  "function": "check_if_pangram"
+}

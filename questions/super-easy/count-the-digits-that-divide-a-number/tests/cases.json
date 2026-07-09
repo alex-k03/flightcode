@@ -1,0 +1,8 @@
+[
+  {"input": {"num": 121}, "expected": 2},
+  {"input": {"num": 1248}, "expected": 4},
+  {"input": {"num": 7}, "expected": 1},
+  {"input": {"num": 222}, "expected": 3},
+  {"input": {"num": 135}, "expected": 3},
+  {"input": {"num": 9999}, "expected": 4}
+]

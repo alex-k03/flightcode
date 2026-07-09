@@ -1,0 +1,8 @@
+[
+  {"input": {"s": "aAbBcC"}, "expected": 2},
+  {"input": {"s": "AaAaAaaA"}, "expected": 0},
+  {"input": {"s": "mDVD"}, "expected": 3},
+  {"input": {"s": "z"}, "expected": 0},
+  {"input": {"s": "abc"}, "expected": 2},
+  {"input": {"s": "aAabBBcC"}, "expected": 2}
+]

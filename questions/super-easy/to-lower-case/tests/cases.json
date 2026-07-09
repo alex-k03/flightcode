@@ -1,0 +1,8 @@
+[
+  {"input": {"s": "Hello"}, "expected": "hello"},
+  {"input": {"s": "here"}, "expected": "here"},
+  {"input": {"s": "LOVELY"}, "expected": "lovely"},
+  {"input": {"s": "a-B-C"}, "expected": "a-b-c"},
+  {"input": {"s": "Python3"}, "expected": "python3"},
+  {"input": {"s": "MiXeD Case!"}, "expected": "mixed case!"}
+]
