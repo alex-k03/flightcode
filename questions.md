@@ -14,3 +14,4 @@ This file is the human-readable index of available questions. Update it whenever
 | Question | Slug | Difficulty | Pattern |
 | --- | --- | --- | --- |
 | Valid Palindrome | `two-pointers/valid-palindrome` | Easy | Two pointers |
+| Trapping Rain Water | `two-pointers/trapping-rain-water` | Hard | Two pointers |

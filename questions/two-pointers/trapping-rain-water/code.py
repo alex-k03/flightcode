@@ -1,0 +1,2 @@
+def trap(height):
+    pass
