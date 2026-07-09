@@ -1,0 +1,10 @@
+[
+  {"input": {"s": "abcabcbb"}, "expected": 3},
+  {"input": {"s": "bbbbb"}, "expected": 1},
+  {"input": {"s": "pwwkew"}, "expected": 3},
+  {"input": {"s": ""}, "expected": 0},
+  {"input": {"s": " "}, "expected": 1},
+  {"input": {"s": "abba"}, "expected": 2},
+  {"input": {"s": "dvdf"}, "expected": 3},
+  {"input": {"s": "aA1!aA"}, "expected": 4}
+]

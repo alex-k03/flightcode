@@ -1,0 +1,5 @@
+{
+  "difficulty": "medium",
+  "time_limit_seconds": 3,
+  "function": "longest_substring_without_repeating_characters"
+}

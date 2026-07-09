@@ -1,0 +1,5 @@
+{
+  "difficulty": "medium",
+  "time_limit_seconds": 3,
+  "function": "product_of_array_except_self"
+}

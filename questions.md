@@ -5,6 +5,13 @@ This file is the human-readable index of available questions. Update it whenever
 ## Category Key
 
 - `[HLP]` Hard, low prerequisite knowledge: difficult because of reasoning and invariants, not because it requires a lot of prior algorithms background.
+- `[MLP]` Medium, low prerequisite knowledge: approachable with careful first-principles reasoning and basic data structures.
+
+## Arrays
+
+| Question | Slug | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| Next Permutation `[MLP]` | `arrays/next-permutation` | Medium | Suffix reasoning |
 
 ## Super Easy
 
@@ -40,6 +47,7 @@ This file is the human-readable index of available questions. Update it whenever
 
 | Question | Slug | Difficulty | Pattern |
 | --- | --- | --- | --- |
+| Product of Array Except Self `[MLP]` | `arrays-hashing/product-of-array-except-self` | Medium | Prefix/suffix products |
 | Two Sum | `arrays-hashing/two-sum` | Easy | Hash map |
 | Valid Anagram | `arrays-hashing/valid-anagram` | Easy | Character counting |
 
@@ -62,9 +70,23 @@ This file is the human-readable index of available questions. Update it whenever
 | Largest Rectangle in Histogram `[HLP]` | `monotonic-stack/largest-rectangle-in-histogram` | Hard | Monotonic stack |
 | Maximal Rectangle `[HLP]` | `monotonic-stack/maximal-rectangle` | Hard | Histogram compression |
 
+## Matrix
+
+| Question | Slug | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| Rotate Image `[MLP]` | `matrix/rotate-image` | Medium | Coordinate transform |
+| Spiral Matrix `[MLP]` | `matrix/spiral-matrix` | Medium | Boundary simulation |
+
+## Sliding Window
+
+| Question | Slug | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| Longest Substring Without Repeating Characters `[MLP]` | `sliding-window/longest-substring-without-repeating-characters` | Medium | Sliding window |
+
 ## Two Pointers
 
 | Question | Slug | Difficulty | Pattern |
 | --- | --- | --- | --- |
+| Container With Most Water `[MLP]` | `two-pointers/container-with-most-water` | Medium | Two pointers |
 | Valid Palindrome | `two-pointers/valid-palindrome` | Easy | Two pointers |
 | Trapping Rain Water `[HLP]` | `two-pointers/trapping-rain-water` | Hard | Two pointers |
