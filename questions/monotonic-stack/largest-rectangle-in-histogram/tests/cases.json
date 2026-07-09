@@ -1,0 +1,10 @@
+[
+  {"input": {"heights": [2, 1, 5, 6, 2, 3]}, "expected": 10},
+  {"input": {"heights": [2, 4]}, "expected": 4},
+  {"input": {"heights": [1]}, "expected": 1},
+  {"input": {"heights": [1, 1, 1, 1]}, "expected": 4},
+  {"input": {"heights": [5, 4, 3, 2, 1]}, "expected": 9},
+  {"input": {"heights": [1, 2, 3, 4, 5]}, "expected": 9},
+  {"input": {"heights": [0, 0, 0]}, "expected": 0},
+  {"input": {"heights": [2, 1, 2]}, "expected": 3}
+]

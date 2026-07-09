@@ -1,0 +1,10 @@
+[
+  {"input": {"matrix": ["10100", "10111", "11111", "10010"]}, "expected": 6},
+  {"input": {"matrix": ["0"]}, "expected": 0},
+  {"input": {"matrix": ["1"]}, "expected": 1},
+  {"input": {"matrix": []}, "expected": 0},
+  {"input": {"matrix": ["00", "00"]}, "expected": 0},
+  {"input": {"matrix": ["11", "11"]}, "expected": 4},
+  {"input": {"matrix": ["101", "111", "111"]}, "expected": 6},
+  {"input": {"matrix": ["0110", "1111", "1111"]}, "expected": 8}
+]

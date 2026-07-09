@@ -2,6 +2,10 @@
 
 This file is the human-readable index of available questions. Update it whenever a question is added, renamed, moved, or removed.
 
+## Category Key
+
+- `[HLP]` Hard, low prerequisite knowledge: difficult because of reasoning and invariants, not because it requires a lot of prior algorithms background.
+
 ## Super Easy
 
 | Question | Slug | Difficulty | Pattern |
@@ -39,9 +43,28 @@ This file is the human-readable index of available questions. Update it whenever
 | Two Sum | `arrays-hashing/two-sum` | Easy | Hash map |
 | Valid Anagram | `arrays-hashing/valid-anagram` | Easy | Character counting |
 
+## Binary Search
+
+| Question | Slug | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| Median of Two Sorted Arrays `[HLP]` | `binary-search/median-of-two-sorted-arrays` | Hard | Partition binary search |
+
+## Greedy
+
+| Question | Slug | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| Candy `[HLP]` | `greedy/candy` | Hard | Two-pass greedy |
+
+## Monotonic Stack
+
+| Question | Slug | Difficulty | Pattern |
+| --- | --- | --- | --- |
+| Largest Rectangle in Histogram `[HLP]` | `monotonic-stack/largest-rectangle-in-histogram` | Hard | Monotonic stack |
+| Maximal Rectangle `[HLP]` | `monotonic-stack/maximal-rectangle` | Hard | Histogram compression |
+
 ## Two Pointers
 
 | Question | Slug | Difficulty | Pattern |
 | --- | --- | --- | --- |
 | Valid Palindrome | `two-pointers/valid-palindrome` | Easy | Two pointers |
-| Trapping Rain Water | `two-pointers/trapping-rain-water` | Hard | Two pointers |
+| Trapping Rain Water `[HLP]` | `two-pointers/trapping-rain-water` | Hard | Two pointers |

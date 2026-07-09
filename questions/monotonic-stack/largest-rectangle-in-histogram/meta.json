@@ -1,0 +1,5 @@
+{
+  "difficulty": "hard",
+  "time_limit_seconds": 3,
+  "function": "largest_rectangle_in_histogram"
+}
