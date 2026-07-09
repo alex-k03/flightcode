@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "count_digits"
+  "function": "count_the_digits_that_divide_a_number"
 }

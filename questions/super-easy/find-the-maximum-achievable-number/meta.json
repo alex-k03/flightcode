@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "the_maximum_achievable_x"
+  "function": "find_the_maximum_achievable_number"
 }

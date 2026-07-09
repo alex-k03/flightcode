@@ -1,4 +1,4 @@
-def sum_of_multiples(n):
+def sum_multiples(n):
     total = 0
     for value in range(1, n + 1):
         if value % 3 == 0 or value % 5 == 0 or value % 7 == 0:

@@ -1,4 +1,4 @@
-def trap(height):
+def trapping_rain_water(height):
     if not height:
         return 0
     

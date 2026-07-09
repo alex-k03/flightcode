@@ -1,4 +1,4 @@
-def find_words_containing(words, x):
+def find_words_containing_character(words, x):
     answer = []
     for i, word in enumerate(words):
         if x in word:

@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "xor_operation"
+  "function": "xor_operation_in_an_array"
 }

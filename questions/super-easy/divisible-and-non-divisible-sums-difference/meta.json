@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "difference_of_sums"
+  "function": "divisible_and_non_divisible_sums_difference"
 }

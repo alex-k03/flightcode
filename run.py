@@ -6,7 +6,7 @@ test cases in a subprocess with a per-question time limit.
 
 Usage:
     ./run.py list [--module MODULE] [--difficulty easy|medium|hard]
-    ./run.py test <question-slug> [--case N]
+    ./run.py test <question-slug-or-function> [--case N]
     ./run.py test --all [--module MODULE]
     ./run.py test-solutions [<question-slug>] [--all] [--module MODULE]
     ./run.py status               # progress overview
@@ -26,6 +26,7 @@ Question shape (convention over configuration):
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -83,12 +84,23 @@ def load_meta(q_dir):
     return meta
 
 
-def find_question(slug):
-    matches = [(m, s, p) for m, s, p in discover() if s == slug]
+def function_name_from_slug(slug):
+    name = re.sub(r"[^0-9a-zA-Z]+", "_", slug).strip("_").lower()
+    if not name or name[0].isdigit():
+        name = f"question_{name}"
+    return name
+
+
+def find_question(query):
+    matches = []
+    for module, slug, path in discover():
+        meta = load_meta(path)
+        if query in (slug, meta["function"]):
+            matches.append((module, slug, path))
     if not matches:
-        sys.exit(f"{RED}No question '{slug}' found. Run ./run.py list{RESET}")
+        sys.exit(f"{RED}No question '{query}' found. Run ./run.py list{RESET}")
     if len(matches) > 1:
-        sys.exit(f"{RED}Ambiguous slug '{slug}' in modules: "
+        sys.exit(f"{RED}Ambiguous question '{query}' in modules: "
                  f"{[m for m, _, _ in matches]}{RESET}")
     return matches[0]
 
@@ -270,11 +282,9 @@ def cmd_reset_completion(args):
         print(f"{module}/{slug} was not marked solved.")
 
 
-TEMPLATE_META = {"difficulty": "medium", "time_limit_seconds": 5,
-                 "function": "solve"}
 TEMPLATE_QUESTION = "# {title}\n\n**Difficulty:** medium\n\n## Problem\n\nTODO\n\n## Examples\n\n```\nInput: \nOutput: \n```\n\n## Constraints\n\n- TODO\n"
-TEMPLATE_CODE = "def solve():\n    pass\n"
-TEMPLATE_REFERENCE = "# Example solution. Replace this with a complete reference answer.\n\n\ndef solve():\n    pass\n"
+TEMPLATE_CODE = "def {function_name}():\n    pass\n"
+TEMPLATE_REFERENCE = "# Example solution. Replace this with a complete reference answer.\n\n\ndef {function_name}():\n    pass\n"
 TEMPLATE_CASES = []
 
 
@@ -286,11 +296,16 @@ def cmd_new(args):
     if q_dir.exists():
         sys.exit(f"{q_dir} already exists")
     (q_dir / "tests").mkdir(parents=True)
-    (q_dir / "meta.json").write_text(json.dumps(TEMPLATE_META, indent=2))
+    function_name = function_name_from_slug(slug)
+    meta = {"difficulty": "medium", "time_limit_seconds": 5,
+            "function": function_name}
+    (q_dir / "meta.json").write_text(json.dumps(meta, indent=2) + "\n")
     title = slug.replace("-", " ").title()
     (q_dir / "QUESTION.md").write_text(TEMPLATE_QUESTION.format(title=title))
-    (q_dir / USER_SOLUTION_FILE).write_text(TEMPLATE_CODE)
-    (q_dir / REFERENCE_SOLUTION_FILE).write_text(TEMPLATE_REFERENCE)
+    (q_dir / USER_SOLUTION_FILE).write_text(
+        TEMPLATE_CODE.format(function_name=function_name))
+    (q_dir / REFERENCE_SOLUTION_FILE).write_text(
+        TEMPLATE_REFERENCE.format(function_name=function_name))
     (q_dir / "tests" / "cases.json").write_text(
         json.dumps(TEMPLATE_CASES, indent=2))
     print(f"Scaffolded {q_dir}")
@@ -319,6 +334,7 @@ Requirements:
 - Read AGENTS.md first and follow the repository contract.
 - Put the complete problem statement in QUESTION.md with examples and constraints.
 - Set meta.json with difficulty, time_limit_seconds, and function.
+- The function name must be the question slug converted to snake_case: {function_name_from_slug(slug)}.
 - Implement a correct reference/example solution in solution.py using the function named in meta.json.
 - Create code.py with the same function signature as a starter for the user. Leave the body blank/pass.
 - Add 5-8 deterministic JSON test cases in tests/cases.json.

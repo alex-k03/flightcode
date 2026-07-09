@@ -1,4 +1,4 @@
-def is_anagram(s, t):
+def valid_anagram(s, t):
     if len(s) != len(t):
         return False
 

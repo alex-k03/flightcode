@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "triangle_type"
+  "function": "type_of_triangle"
 }

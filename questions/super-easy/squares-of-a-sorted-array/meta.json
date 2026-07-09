@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "sorted_squares"
+  "function": "squares_of_a_sorted_array"
 }

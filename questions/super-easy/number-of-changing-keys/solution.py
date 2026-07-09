@@ -1,4 +1,4 @@
-def count_key_changes(s):
+def number_of_changing_keys(s):
     s = s.lower()
     changes = 0
     for i in range(1, len(s)):

@@ -1,4 +1,4 @@
-def array_sign(nums):
+def sign_of_the_product_of_an_array(nums):
     negative_count = 0
     for num in nums:
         if num == 0:

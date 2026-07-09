@@ -1,4 +1,4 @@
-def sorted_squares(nums):
+def squares_of_a_sorted_array(nums):
     left = 0
     right = len(nums) - 1
     answer = [0] * len(nums)

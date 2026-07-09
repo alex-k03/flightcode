@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "subtract_product_and_sum"
+  "function": "subtract_the_product_and_sum_of_digits_of_an_integer"
 }

@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "first_palindrome"
+  "function": "find_first_palindromic_string_in_the_array"
 }

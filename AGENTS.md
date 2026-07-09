@@ -25,6 +25,8 @@ questions/<module>/<slug>/
 }
 ```
 
+The function name must match the question slug converted to snake_case. For example, `valid-palindrome` uses `valid_palindrome`.
+
 `code.py` is the user's working solution starter and is what `./run.py test` executes. It must define the function named by `meta.json`, but new questions should leave the body blank or `pass`.
 
 `solution.py` is the example/reference solution for someone who gets stuck. It should define the same function and be correct.
@@ -63,7 +65,7 @@ Use the printed prompt as the task for the agent adding the question.
 When creating a question:
 
 - Write a complete `QUESTION.md` with title, difficulty, problem, examples, constraints, and any pattern note that helps.
-- Write `meta.json` with a stable snake_case function name.
+- Write `meta.json` with the question slug converted to snake_case as the function name.
 - Write `code.py` with the user-facing starter function. Keep the implementation blank or `pass`.
 - Write a correct reference/example implementation in `solution.py`.
 - Add 5-8 deterministic test cases.
@@ -94,6 +96,6 @@ When creating a question:
 - Prefer stdlib-only Python.
 - Prefer JSON test data over custom parsing.
 - Keep question folders modular and copyable.
-- Keep `code.py` and `solution.py` signatures in sync.
+- Keep `meta.json`, `code.py`, and `solution.py` function names/signatures in sync.
 - Treat `.solved` files as local completion state. Use `./run.py reset-completion` to clear them.
 - Avoid generated artifacts such as `__pycache__` and runner scratch files in commits.

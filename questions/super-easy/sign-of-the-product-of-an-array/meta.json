@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "array_sign"
+  "function": "sign_of_the_product_of_an_array"
 }

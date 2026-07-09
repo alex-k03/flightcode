@@ -1,4 +1,4 @@
-def number_game(nums):
+def minimum_number_game(nums):
     nums = sorted(nums)
     answer = []
     for i in range(0, len(nums), 2):

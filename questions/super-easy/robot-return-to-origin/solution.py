@@ -1,4 +1,4 @@
-def judge_circle(moves):
+def robot_return_to_origin(moves):
     x = 0
     y = 0
     for move in moves:

@@ -1,4 +1,4 @@
-def count_digits(num):
+def count_the_digits_that_divide_a_number(num):
     original = num
     count = 0
     while num:

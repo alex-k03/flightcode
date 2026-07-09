@@ -1,4 +1,4 @@
-def first_uniq_char(s):
+def first_unique_character_in_a_string(s):
     counts = {}
     for ch in s:
         counts[ch] = counts.get(ch, 0) + 1

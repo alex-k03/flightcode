@@ -1,4 +1,4 @@
-def cal_points(operations):
+def baseball_game(operations):
     scores = []
     for op in operations:
         if op == "+":

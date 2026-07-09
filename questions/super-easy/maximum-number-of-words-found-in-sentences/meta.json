@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "most_words_found"
+  "function": "maximum_number_of_words_found_in_sentences"
 }

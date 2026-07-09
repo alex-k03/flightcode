@@ -8,6 +8,7 @@ A self-contained interview prep repo. Zero dependencies (Python 3 stdlib only) �
 ./run.py list                     # all questions, ● = solved
 ./run.py list --module graphs --difficulty medium
 ./run.py test two-sum             # run tests with time limits
+./run.py test two_sum             # function names work too
 ./run.py test --all               # everything
 ./run.py test-solutions --all     # verify example/reference solutions
 ./run.py status                   # progress bars per module
@@ -28,6 +29,7 @@ questions/<module>/<slug>/
 ```
 
 Drop a new folder matching this shape anywhere under `questions/` and it just works — no registration.
+Function names match the question slug converted to snake_case, so `valid-palindrome` uses `valid_palindrome`.
 
 See `questions.md` for the human-readable module and question index.
 

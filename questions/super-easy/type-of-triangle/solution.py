@@ -1,4 +1,4 @@
-def triangle_type(nums):
+def type_of_triangle(nums):
     a, b, c = sorted(nums)
     if a + b <= c:
         return "none"

@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "judge_circle"
+  "function": "robot_return_to_origin"
 }

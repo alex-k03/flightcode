@@ -1,4 +1,4 @@
-def is_palindrome(s):
+def valid_palindrome(s):
     left = 0
     right = len(s) - 1
 

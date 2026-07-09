@@ -1,5 +1,5 @@
 {
   "difficulty": "easy",
   "time_limit_seconds": 3,
-  "function": "is_palindrome"
+  "function": "valid_palindrome"
 }
