@@ -1,6 +1,8 @@
 [
-  {
-    "input": {},
-    "expected": null
-  }
+  {"input": {"s": "A man, a plan, a canal: Panama"}, "expected": true},
+  {"input": {"s": "race a car"}, "expected": false},
+  {"input": {"s": " "}, "expected": true},
+  {"input": {"s": "0P"}, "expected": false},
+  {"input": {"s": "No lemon, no melon"}, "expected": true},
+  {"input": {"s": "ab_a"}, "expected": true}
 ]

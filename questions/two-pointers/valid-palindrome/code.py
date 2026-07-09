@@ -1,2 +1,2 @@
-def solve():
+def is_palindrome(s):
     pass
